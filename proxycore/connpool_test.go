@@ -21,7 +21,6 @@ import (
 	"time"
 
 	"github.com/datastax/cql-proxy/parser"
-
 	"github.com/datastax/go-cassandra-native-protocol/frame"
 	"github.com/datastax/go-cassandra-native-protocol/message"
 	"github.com/datastax/go-cassandra-native-protocol/primitive"
