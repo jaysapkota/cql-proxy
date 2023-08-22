@@ -20,7 +20,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/datastax/cql-proxy/proxycore"
+	"github.com/jaysapkota/cql-proxy/proxycore"
 	"github.com/datastax/go-cassandra-native-protocol/frame"
 	"github.com/datastax/go-cassandra-native-protocol/message"
 	"github.com/datastax/go-cassandra-native-protocol/primitive"

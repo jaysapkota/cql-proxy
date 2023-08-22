@@ -27,7 +27,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/datastax/cql-proxy/parser"
+	"github.com/jaysapkota/cql-proxy/parser"
 
 	"github.com/datastax/go-cassandra-native-protocol/datatype"
 	"github.com/datastax/go-cassandra-native-protocol/frame"
