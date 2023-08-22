@@ -27,7 +27,7 @@ import (
 
 	"github.com/jaysapkota/cql-proxy/proxycore"
 
-	"github.com/jaysapkota/go-cassandra-native-protocol/datatype"
+	"github.com/datastax/go-cassandra-native-protocol/datatype"
 	"github.com/datastax/go-cassandra-native-protocol/frame"
 	"github.com/datastax/go-cassandra-native-protocol/message"
 	"github.com/datastax/go-cassandra-native-protocol/primitive"
