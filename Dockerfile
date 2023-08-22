@@ -13,7 +13,7 @@ RUN go mod download
 COPY . ./
 
 # Build and install binary
-RUN go install github.com/datastax/cql-proxy
+RUN go install github.com/jaysapkota/cql-proxy
 
 # Run unit tests
 RUN go test -short -v ./...

@@ -251,9 +251,9 @@ func (c *Cluster) mergeHosts(hosts []*Host) error {
 			break
 		}
 	}
-	if c.currentHostIndex < 0 {
-		return fmt.Errorf("host %s not found in system tables", c.currentEndpoint)
-	}
+	// if c.currentHostIndex < 0 {
+	// 	return fmt.Errorf("host %s not found in system tables", c.currentEndpoint)
+	// }
 
 	for _, host := range hosts {
 		key := host.Key()
@@ -263,6 +263,12 @@ func (c *Cluster) mergeHosts(hosts []*Host) error {
 			c.logger.Info("adding host to the cluster", zap.Stringer("host", host))
 			c.sendEvent(&AddEvent{host})
 		}
+		
+		endpoints, err := c.config.Resolver.Resolve(c.ctx)
+		if err != nil {
+			return err
+		}
+		host.Endpoint = endpoints[len(endpoints)-1]
 	}
 
 	for _, host := range existing {
