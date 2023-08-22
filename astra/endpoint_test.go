@@ -26,9 +26,9 @@ import (
 	"time"
 
 	"github.com/jaysapkota/cql-proxy/proxycore"
-	"github.com/jaysapkota/go-cassandra-native-protocol/datatype"
-	"github.com/jaysapkota/go-cassandra-native-protocol/message"
-	"github.com/jaysapkota/go-cassandra-native-protocol/primitive"
+	"github.com/datastax/go-cassandra-native-protocol/datatype"
+	"github.com/datastax/go-cassandra-native-protocol/message"
+	"github.com/datastax/go-cassandra-native-protocol/primitive"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
