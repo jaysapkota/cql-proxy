@@ -252,9 +252,9 @@ func (c *Cluster) mergeHosts(hosts []*Host) error {
 			break
 		}
 	}
-	if c.currentHostIndex < 0 {
-		return fmt.Errorf("host %s not found in system tables", c.currentEndpoint)
-	}
+	// if c.currentHostIndex < 0 {
+	// 	return fmt.Errorf("host %s not found in system tables", c.currentEndpoint)
+	// }
 
 	for _, host := range hosts {
 		key := host.Key()
