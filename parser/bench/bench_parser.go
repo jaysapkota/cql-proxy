@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/datastax/cql-proxy/parser"
+	"github.com/jaysapkota/cql-proxy/parser"
 )
 
 var queries = []struct {
